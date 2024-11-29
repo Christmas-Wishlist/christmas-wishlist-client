@@ -1,5 +1,11 @@
+import Wishlist from "../wishlist/wishlist";
+
 const PrivateLayout = () => {
-	return <main></main>;
+	return (
+		<main>
+			<Wishlist />
+		</main>
+	);
 };
 
 export default PrivateLayout;

@@ -1,4 +1,5 @@
 export type Wish = {
+	id: string;
 	title: string;
 	message: string;
 	fulfilled: boolean;
