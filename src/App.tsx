@@ -1,8 +1,15 @@
-import "./App.css";
-import PrivateLayout from "./components/layouts/private-layout";
+import AppRouter from "./components/router/app-router";
+import { AuthProvider } from "./ctx/auth.ctx";
+import { WishlistProvider } from "./ctx/wishlist.ctx";
 
-function App() {
-	return <PrivateLayout />;
-}
+const App = () => {
+	return (
+		<AuthProvider>
+			<WishlistProvider>
+				<AppRouter />
+			</WishlistProvider>
+		</AuthProvider>
+	);
+};
 
 export default App;

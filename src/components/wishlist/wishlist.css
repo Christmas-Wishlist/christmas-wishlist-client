@@ -1,0 +1,41 @@
+/* Wishlist wrapper */
+.wishlist-wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la wishlist */
+.wishlist-title {
+	font-size: 2rem;
+	color: #d32f2f; /* Rouge vif */
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Liste des wishcards */
+.wishlist-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+/* Boutons d'action */
+.button {
+	background-color: #388e3c; /* Vert sapin */
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #2c6b2f;
+}

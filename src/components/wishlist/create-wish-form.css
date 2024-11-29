@@ -1,0 +1,109 @@
+/* Fond général de la page */
+body {
+	font-family: "Arial", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+/* Conteneur de la modale */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7); /* Ombre foncée */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+/* Formulaire centré */
+form {
+	background-color: white;
+	padding: 30px;
+	border-radius: 12px;
+	width: 80%;
+	max-width: 500px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: #333;
+	position: relative;
+}
+
+/* Titres et étiquettes */
+label {
+	font-weight: bold;
+	color: #555;
+	font-size: 16px;
+}
+
+/* Inputs et textareas */
+input,
+textarea {
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	color: #333;
+	background-color: #f9f9f9;
+	transition: all 0.3s ease;
+}
+
+/* Focus sur les champs */
+input:focus,
+textarea:focus {
+	border-color: #3498db;
+	outline: none;
+	background-color: #fff;
+}
+
+/* Message d'erreur */
+p {
+	color: red;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+/* Bouton de soumission */
+button {
+	background-color: #3498db;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* Hover sur le bouton */
+button:hover {
+	background-color: #2980b9;
+}
+
+/* Style de l'overlay de la modale */
+button:focus {
+	outline: none;
+}
+
+/* Effet de fermeture du formulaire */
+.close-modal-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 30px;
+	color: #888;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.close-modal-btn:hover {
+	color: #e74c3c;
+}
