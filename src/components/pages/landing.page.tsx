@@ -1,11 +1,11 @@
 import Wishlist from "../wishlist/wishlist";
 
-const PrivateLayout = () => {
+const LandingPage = () => {
 	return (
-		<main>
+		<div>
 			<Wishlist />
-		</main>
+		</div>
 	);
 };
 
-export default PrivateLayout;
+export default LandingPage;

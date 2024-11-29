@@ -1,0 +1,60 @@
+/* Style global pour les cartes de souhait */
+.wishcard-wrapper {
+	padding: 1em;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	font-family: "Arial", sans-serif;
+	transition: transform 0.2s ease-in-out;
+	background-color: #fef1e6;
+	position: relative;
+}
+
+.wishcard-wrapper:hover {
+	transform: scale(1.05);
+}
+
+.wishcard-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wishcard-title {
+	font-size: 1.5rem;
+	color: #bf4343;
+	margin: 0;
+}
+
+.wishcard-status {
+	font-size: 1rem;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.wish-status.fulfilled {
+	background-color: #7bce8f;
+	color: white;
+}
+
+.wish-message {
+	font-size: 1.1rem;
+	color: #555;
+}
+
+.wish-card-footer {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.9rem;
+}
+
+.wish-owner,
+.wish-recipient {
+	color: #333;
+}
+
+.wish-owner strong,
+.wish-recipient strong {
+	font-weight: bold;
+	color: #ee8f69;
+}
