@@ -4,17 +4,17 @@ import { http } from "./http";
 const useAPI = () => {
 	return {
 		getWishById: async (id: string) => {
-			const response = await http.get(`/wish/${id}`);
+			const response = await http.get(`/christmaswish/${id}`);
 			return response.data;
 		},
 
 		getWishesByOwnerId: async (ownerId: string) => {
-			const response = await http.get(`/wish/owner/${ownerId}`);
+			const response = await http.get(`/christmaswish/${ownerId}`);
 			return response.data;
 		},
 
 		createWish: async (wish: Omit<Wish, "id">): Promise<Wish> => {
-			const response = await http.post("/wish", wish);
+			const response = await http.post("/christmaswish", wish);
 			return response.data;
 		},
 

@@ -18,3 +18,5 @@ enum UserRole {
 	ADMIN = "admin",
 	USER = "user",
 }
+
+export type WishFormData = Omit<Wish, "id">;
