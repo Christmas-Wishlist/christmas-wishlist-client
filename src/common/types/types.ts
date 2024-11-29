@@ -1,4 +1,5 @@
 export type Wish = {
+	id: string;
 	title: string;
 	message: string;
 	fulfilled: boolean;
@@ -17,3 +18,5 @@ enum UserRole {
 	ADMIN = "admin",
 	USER = "user",
 }
+
+export type WishFormData = Omit<Wish, "id">;
